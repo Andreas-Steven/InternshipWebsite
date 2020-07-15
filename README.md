@@ -1,6 +1,6 @@
 # Internship API Management Web
 
-Built on top of Postgresql and CodeIgniter 3
+Built on top of CodeIgniter 3, Postgresql, and AdminLTE 3 
 
 ## Development
 
