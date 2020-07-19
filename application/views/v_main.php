@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>AdminInternship | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -42,10 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="main.html" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -160,10 +157,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Admin Internship</span>
     </a>
 
     <!-- Sidebar -->
@@ -171,10 +168,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/loyo.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Yosua Hinarno</a>
         </div>
       </div>
 
@@ -193,43 +190,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="./main.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v1</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
-            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="pages/layout/top-nav.html" class="nav-link">
@@ -279,100 +247,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Manage Data
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="pages/charts/manage_nama.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ManageName</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/manage_nama.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ManageKategori</p>
+                </a>
+              </li>
               <li class="nav-item">
                 <a href="pages/charts/chartjs.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ChartJS</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+        
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                Forms
+                Test API
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="pages/forms/general.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General Elements</p>
@@ -383,17 +293,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <i class="far fa-circle nav-icon"></i>
                   <p>Advanced Elements</p>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
+                <a href="pages/forms/namaapi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                  <p>Name API</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="pages/forms/kategoriapi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
+                  <p>Kategori API</p>
                 </a>
               </li>
             </ul>
@@ -417,12 +327,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <a href="pages/tables/data.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
                 </a>
               </li>
             </ul>
@@ -585,18 +489,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/404.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/500.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="pages/examples/pace.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pace</p>
@@ -616,98 +508,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </li>
             </ul>
           </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.0" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
-            </a>
-          </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle"></i>
-              <p>
-                Level 1
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Level 2
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
-            </a>
-          </li>
-        </ul>
+         
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -726,7 +527,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -737,587 +538,949 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
+        <!-- Info boxes -->
         <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
-                <p>New Orders</p>
+              <div class="info-box-content">
+                <span class="info-box-text">CPU Traffic</span>
+                <span class="info-box-number">
+                  10
+                  <small>%</small>
+                </span>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <!-- /.info-box-content -->
             </div>
+            <!-- /.info-box -->
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
 
-                <p>Bounce Rate</p>
+              <div class="info-box-content">
+                <span class="info-box-text">Likes</span>
+                <span class="info-box-number">41,410</span>
               </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <!-- /.info-box-content -->
             </div>
+            <!-- /.info-box -->
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
+          <!-- /.col -->
 
-                <p>User Registrations</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
 
-                <p>Unique Visitors</p>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-comment" aria-hidden="true"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Conversation</span>
+                <span class="info-box-number">760</span>
               </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <!-- /.info-box-content -->
             </div>
+            <!-- /.info-box -->
           </div>
-          <!-- ./col -->
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">New Members</span>
+                <span class="info-box-number">2,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
         </div>
         <!-- /.row -->
         <!-- Main row -->
         <div class="row">
-          <!-- Left col -->
-          <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  Sales
-                </h3>
-                <div class="card-tools">
-                  <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                    </li>
-                  </ul>
+          <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">DataTable NAME API</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                      <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 4.0
+                        </td>
+                        <td>Win 10</td>
+                        <td> 4</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 5.0
+                        </td>
+                        <td>Win 95+</td>
+                        <td>5</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 5.5
+                        </td>
+                        <td>Win 95+</td>
+                        <td>5.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 6
+                        </td>
+                        <td>Win 98+</td>
+                        <td>6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet Explorer 7</td>
+                        <td>Win XP SP2+</td>
+                        <td>7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>AOL browser (AOL desktop)</td>
+                        <td>Win XP</td>
+                        <td>6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 1.0</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 1.5</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 2.0</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 3.0</td>
+                        <td>Win 2k+ / OSX.3+</td>
+                        <td>1.9</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Camino 1.0</td>
+                        <td>OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Camino 1.5</td>
+                        <td>OSX.3+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape 7.2</td>
+                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape Browser 8</td>
+                        <td>Win 98SE+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape Navigator 9</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.0</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.1</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.2</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.2</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.3</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.4</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.4</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.5</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.6</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.7</td>
+                        <td>Win 98+ / OSX.1+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.8</td>
+                        <td>Win 98+ / OSX.1+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Seamonkey 1.1</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Epiphany 2.20</td>
+                        <td>Gnome</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 1.2</td>
+                        <td>OSX.3</td>
+                        <td>125.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 1.3</td>
+                        <td>OSX.3</td>
+                        <td>312.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 2.0</td>
+                        <td>OSX.4+</td>
+                        <td>419.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 3.0</td>
+                        <td>OSX.4+</td>
+                        <td>522.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>OmniWeb 5.5</td>
+                        <td>OSX.4+</td>
+                        <td>420</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>iPod Touch / iPhone</td>
+                        <td>iPod</td>
+                        <td>420.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>S60</td>
+                        <td>S60</td>
+                        <td>413</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 7.0</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 7.5</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 8.0</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 8.5</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.0</td>
+                        <td>Win 95+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.2</td>
+                        <td>Win 88+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.5</td>
+                        <td>Win 88+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera for Wii</td>
+                        <td>Wii</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Nokia N800</td>
+                        <td>N800</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Nintendo DS browser</td>
+                        <td>Nintendo DS</td>
+                        <td>8.5</td>
+                        <td>C/A<sup>1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.1</td>
+                        <td>KDE 3.1</td>
+                        <td>3.1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.3</td>
+                        <td>KDE 3.3</td>
+                        <td>3.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.5</td>
+                        <td>KDE 3.5</td>
+                        <td>3.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 4.5</td>
+                        <td>Mac OS 8-9</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.1</td>
+                        <td>Mac OS 7.6-9</td>
+                        <td>1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.2</td>
+                        <td>Mac OS 8-X</td>
+                        <td>1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Dillo 0.8</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Links</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Lynx</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>IE Mobile</td>
+                        <td>Windows Mobile 6</td>
+                        <td>-</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>PSP browser</td>
+                        <td>PSP</td>
+                        <td>-</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Other browsers</td>
+                        <td>All others</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>U</td>
+                      </tr>
+                      </tbody>
+                      <tfoot>
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                      </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
                 </div>
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;">
-                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>                         
-                   </div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>                         
-                  </div>  
+                <!-- /.card -->
+
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">DataTable Kategori API</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 4.0
+                        </td>
+                        <td>Win 95+</td>
+                        <td> 4</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 5.0
+                        </td>
+                        <td>Win 95+</td>
+                        <td>5</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 5.5
+                        </td>
+                        <td>Win 95+</td>
+                        <td>5.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet
+                          Explorer 6
+                        </td>
+                        <td>Win 98+</td>
+                        <td>6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>Internet Explorer 7</td>
+                        <td>Win XP SP2+</td>
+                        <td>7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Trident</td>
+                        <td>AOL browser (AOL desktop)</td>
+                        <td>Win XP</td>
+                        <td>6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 1.0</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 1.5</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 2.0</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Firefox 3.0</td>
+                        <td>Win 2k+ / OSX.3+</td>
+                        <td>1.9</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Camino 1.0</td>
+                        <td>OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Camino 1.5</td>
+                        <td>OSX.3+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape 7.2</td>
+                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape Browser 8</td>
+                        <td>Win 98SE+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Netscape Navigator 9</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.0</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.1</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.2</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.2</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.3</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.4</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.4</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.5</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.6</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>1.6</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.7</td>
+                        <td>Win 98+ / OSX.1+</td>
+                        <td>1.7</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Mozilla 1.8</td>
+                        <td>Win 98+ / OSX.1+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Seamonkey 1.1</td>
+                        <td>Win 98+ / OSX.2+</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Gecko</td>
+                        <td>Epiphany 2.20</td>
+                        <td>Gnome</td>
+                        <td>1.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 1.2</td>
+                        <td>OSX.3</td>
+                        <td>125.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 1.3</td>
+                        <td>OSX.3</td>
+                        <td>312.8</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 2.0</td>
+                        <td>OSX.4+</td>
+                        <td>419.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>Safari 3.0</td>
+                        <td>OSX.4+</td>
+                        <td>522.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>OmniWeb 5.5</td>
+                        <td>OSX.4+</td>
+                        <td>420</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>iPod Touch / iPhone</td>
+                        <td>iPod</td>
+                        <td>420.1</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Webkit</td>
+                        <td>S60</td>
+                        <td>S60</td>
+                        <td>413</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 7.0</td>
+                        <td>Win 95+ / OSX.1+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 7.5</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 8.0</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 8.5</td>
+                        <td>Win 95+ / OSX.2+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.0</td>
+                        <td>Win 95+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.2</td>
+                        <td>Win 88+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera 9.5</td>
+                        <td>Win 88+ / OSX.3+</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Opera for Wii</td>
+                        <td>Wii</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Nokia N800</td>
+                        <td>N800</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Presto</td>
+                        <td>Nintendo DS browser</td>
+                        <td>Nintendo DS</td>
+                        <td>8.5</td>
+                        <td>C/A<sup>1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.1</td>
+                        <td>KDE 3.1</td>
+                        <td>3.1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.3</td>
+                        <td>KDE 3.3</td>
+                        <td>3.3</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.5</td>
+                        <td>KDE 3.5</td>
+                        <td>3.5</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 4.5</td>
+                        <td>Mac OS 8-9</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.1</td>
+                        <td>Mac OS 7.6-9</td>
+                        <td>1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.2</td>
+                        <td>Mac OS 8-X</td>
+                        <td>1</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>NetFront 3.1</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>NetFront 3.4</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Dillo 0.8</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Links</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>Lynx</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>IE Mobile</td>
+                        <td>Windows Mobile 6</td>
+                        <td>-</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Misc</td>
+                        <td>PSP browser</td>
+                        <td>PSP</td>
+                        <td>-</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Other browsers</td>
+                        <td>All others</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>U</td>
+                      </tr>
+                      </tbody>
+                      <tfoot>
+                      <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                      </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
                 </div>
-              </div><!-- /.card-body -->
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
             </div>
-            <!-- /.card -->
-
-            <!-- DIRECT CHAT -->
-            <div class="card direct-chat direct-chat-primary">
-              <div class="card-header">
-                <h3 class="card-title">Direct Chat</h3>
-
-                <div class="card-tools">
-                  <span data-toggle="tooltip" title="3 New Messages" class="badge badge-primary">3</span>
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-toggle="tooltip" title="Contacts"
-                          data-widget="chat-pane-toggle">
-                    <i class="fas fa-comments"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <!-- Conversations are loaded here -->
-                <div class="direct-chat-messages">
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Is this template really for free? That's unbelievable!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      You better believe it!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Working with AdminLTE on a great new app! Wanna join?
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-infos clearfix">
-                      <span class="direct-chat-name float-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
-                    </div>
-                    <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      I would love to.
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                </div>
-                <!--/.direct-chat-messages-->
-
-                <!-- Contacts are loaded here -->
-                <div class="direct-chat-contacts">
-                  <ul class="contacts-list">
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user1-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Count Dracula
-                            <small class="contacts-list-date float-right">2/28/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">How have you been? I was...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user7-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Sarah Doe
-                            <small class="contacts-list-date float-right">2/23/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">I will be waiting for...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user3-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Nadia Jolie
-                            <small class="contacts-list-date float-right">2/20/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">I'll call you back at...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user5-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Nora S. Vans
-                            <small class="contacts-list-date float-right">2/10/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Where is your new...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user6-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            John K.
-                            <small class="contacts-list-date float-right">1/27/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Can I take a look at...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="dist/img/user8-128x128.jpg">
-
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Kenneth M.
-                            <small class="contacts-list-date float-right">1/4/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">Never mind I found...</span>
-                        </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                  </ul>
-                  <!-- /.contacts-list -->
-                </div>
-                <!-- /.direct-chat-pane -->
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-                <form action="#" method="post">
-                  <div class="input-group">
-                    <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                    <span class="input-group-append">
-                      <button type="button" class="btn btn-primary">Send</button>
-                    </span>
-                  </div>
-                </form>
-              </div>
-              <!-- /.card-footer-->
-            </div>
-            <!--/.direct-chat -->
-
-            <!-- TO DO List -->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="ion ion-clipboard mr-1"></i>
-                  To Do List
-                </h3>
-
-                <div class="card-tools">
-                  <ul class="pagination pagination-sm">
-                    <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <ul class="todo-list" data-widget="todo-list">
-                  <li>
-                    <!-- drag handle -->
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <!-- checkbox -->
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo1" id="todoCheck1">
-                      <label for="todoCheck1"></label>
-                    </div>
-                    <!-- todo text -->
-                    <span class="text">Design a nice theme</span>
-                    <!-- Emphasis label -->
-                    <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
-                    <!-- General tools such as edit or delete-->
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
-                      <label for="todoCheck2"></label>
-                    </div>
-                    <span class="text">Make the theme responsive</span>
-                    <small class="badge badge-info"><i class="far fa-clock"></i> 4 hours</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo3" id="todoCheck3">
-                      <label for="todoCheck3"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-warning"><i class="far fa-clock"></i> 1 day</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo4" id="todoCheck4">
-                      <label for="todoCheck4"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-success"><i class="far fa-clock"></i> 3 days</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo5" id="todoCheck5">
-                      <label for="todoCheck5"></label>
-                    </div>
-                    <span class="text">Check your messages and notifications</span>
-                    <small class="badge badge-primary"><i class="far fa-clock"></i> 1 week</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                    <div  class="icheck-primary d-inline ml-2">
-                      <input type="checkbox" value="" name="todo6" id="todoCheck6">
-                      <label for="todoCheck6"></label>
-                    </div>
-                    <span class="text">Let theme shine like a star</span>
-                    <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 month</small>
-                    <div class="tools">
-                      <i class="fas fa-edit"></i>
-                      <i class="fas fa-trash-o"></i>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <button type="button" class="btn btn-info float-right"><i class="fas fa-plus"></i> Add item</button>
-              </div>
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          <section class="col-lg-5 connectedSortable">
-
-            <!-- Map card -->
-            <div class="card bg-gradient-primary">
-              <div class="card-header border-0">
-                <h3 class="card-title">
-                  <i class="fas fa-map-marker-alt mr-1"></i>
-                  Visitors
-                </h3>
-                <!-- card tools -->
-                <div class="card-tools">
-                  <button type="button"
-                          class="btn btn-primary btn-sm daterange"
-                          data-toggle="tooltip"
-                          title="Date range">
-                    <i class="far fa-calendar-alt"></i>
-                  </button>
-                  <button type="button"
-                          class="btn btn-primary btn-sm"
-                          data-card-widget="collapse"
-                          data-toggle="tooltip"
-                          title="Collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </div>
-                <!-- /.card-tools -->
-              </div>
-              <div class="card-body">
-                <div id="world-map" style="height: 250px; width: 100%;"></div>
-              </div>
-              <!-- /.card-body-->
-              <div class="card-footer bg-transparent">
-                <div class="row">
-                  <div class="col-4 text-center">
-                    <div id="sparkline-1"></div>
-                    <div class="text-white">Visitors</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-2"></div>
-                    <div class="text-white">Online</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-3"></div>
-                    <div class="text-white">Sales</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-            </div>
-            <!-- /.card -->
-
-            <!-- solid sales graph -->
-            <div class="card bg-gradient-info">
-              <div class="card-header border-0">
-                <h3 class="card-title">
-                  <i class="fas fa-th mr-1"></i>
-                  Sales Graph
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body">
-                <canvas class="chart" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>
-              <!-- /.card-body -->
-              <div class="card-footer bg-transparent">
-                <div class="row">
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">Mail-Orders</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">Online</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                           data-fgColor="#39CCCC">
-
-                    <div class="text-white">In-Store</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-footer -->
-            </div>
-            <!-- /.card -->
-
-            <!-- Calendar -->
-            <div class="card bg-gradient-success">
-              <div class="card-header border-0">
-
-                <h3 class="card-title">
-                  <i class="far fa-calendar-alt"></i>
-                  Calendar
-                </h3>
-                <!-- tools card -->
-                <div class="card-tools">
-                  <!-- button with a dropdown -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                      <i class="fas fa-bars"></i></button>
-                    <div class="dropdown-menu" role="menu">
-                      <a href="#" class="dropdown-item">Add new event</a>
-                      <a href="#" class="dropdown-item">Clear events</a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">View calendar</a>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <!-- /. tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
@@ -1355,8 +1518,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
 <script src="plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- JQVMap -->
 <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -1380,7 +1546,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="login/js/awr.js"></script>
 <script src="login/js/md5.js"></script>
-
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
   <script>
     // visitor();
     // checkCookie();
