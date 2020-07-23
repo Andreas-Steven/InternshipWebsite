@@ -275,7 +275,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/namaapi.html" class="nav-link">
+                <a href="../forms/namaapi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nama API</p>
                 </a>
@@ -407,13 +407,6 @@
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Extras
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="../examples/login.html" class="nav-link">
@@ -433,18 +426,7 @@
                   <p>Forgot Password</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../examples/recover-password.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recover Password</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a href="../examples/legacy-user-menu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -555,26 +537,21 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="" method="POST" role="form" id="quickForm">
+              <form method="POST" role="form" id="quickForm" action="http://localhost:8080/InternshipWebsite/index.php/KategoriController/getKategoriAPI">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="input">Input</label>
                     <input type="text" name="input" class="form-control" id="exampleInput" placeholder="Enter input">
                   </div>
-                 
+                  <div class="form-group mb-0">
+                  
+                  </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button ttype="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
-              <?php 
-                     if($_SERVER['REQUEST_METHOD'] === 'POST')
-                     {
-                        $input = $_POST['input'];
-                        
-                     }
-                  ?>
             </div>
             <!-- /.card -->
             </div>
@@ -618,6 +595,7 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- 
 <script type="text/javascript">
 $(document).ready(function () {
   $.validator.setDefaults({
@@ -664,5 +642,6 @@ $(document).ready(function () {
   });
 });
 </script>
+-->
 </body>
 </html>

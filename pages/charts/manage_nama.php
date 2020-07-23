@@ -273,7 +273,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/namaapi.html" class="nav-link">
+                <a href="../forms/namaapi.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nama API</p>
                 </a>

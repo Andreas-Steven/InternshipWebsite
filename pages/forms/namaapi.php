@@ -26,7 +26,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../main.html" class="nav-link">Home</a>
+      <a href="../forms/main.php" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -542,9 +542,8 @@
                 <h3 class="card-title">Form NamaAPI</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start 
-             harusnya di dlm action bs pake ini tp gw coba mlh gk bs-> echo base_url('getNama');?>-->
-              <form action="" method="POST" role="form" id="quickForm">
+              <!-- form start -->
+              <form method="POST" role="form" id="quickForm" action="http://localhost:8080/InternshipWebsite/index.php/NamaController/getNamaAPI">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="input">Input</label>
