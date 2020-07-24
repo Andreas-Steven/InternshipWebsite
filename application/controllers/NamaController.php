@@ -3,6 +3,8 @@
 
     class NamaController extends CI_Controller 
     {
+        private $base_url = "http://localhost:8080/InternshipWebsite/";
+
         public function __construct()
         {
             parent::__construct();
@@ -18,12 +20,11 @@
             // echo $res;
         }
 
-        public function getNamaById()
+        public function getNamaById() // BUAT EDIT 
         {
-            $id = $this->input->post('id');
-            $res = $this->namaModel->getNamaById($id);
-            // $this->load->view('', $res);
-            echo $res;
+            $id = $this->input->get('id');
+            $data['hasil'] = $this->namaModel->getNamaById($id);
+            $this->load->view('edit_nama', $data);
         }
 
         public function createNama() // CHECKED
@@ -34,9 +35,7 @@
 
             $res = $this->namaModel->createNama($data);
             
-            $data['nama'] = $this->namaModel->getNama();
-            $data['kategori'] = $this->kategoriModel->getKategori();
-            $this->load->view('v_main', $data);
+            redirect($this->base_url);
         }
 
         public function updateNama() // CHECKED
@@ -47,8 +46,7 @@
             );
 
             $res = $this->namaModel->updateNama($data);
-            // $this->load->view('outputnem', $res);
-            echo $res;
+            redirect($this->base_url);
         }
 
         public function deleteNama() // CHECKED
@@ -58,6 +56,6 @@
             );
 
             $res = $this->namaModel->deleteNama($data);
-            redirect('http://localhost:8080/InternshipWebsite/');
+            redirect($this->base_url);
         }
     }

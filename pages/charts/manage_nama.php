@@ -30,18 +30,6 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
@@ -448,18 +436,7 @@
                   <p>Forgot Password</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../examples/recover-password.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recover Password</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
+             
               <li class="nav-item">
                 <a href="../examples/legacy-user-menu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -527,34 +504,20 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">NAME API</h3>
+                <h3 class="card-title">Manage NamaAPI</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="" method="POST" role="form" id="quickForm">
+              <form action="http://localhost:8080/InternshipWebsite/index.php/NamaController/createNama" method="POST" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="input">Input Nama</label>
-                    <input type="text" name="input" class="form-control" id="exampleInput" placeholder="Enter input">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Sinonim</label>
-                    <br>
-                    <select name="api" id="mySelect" class="form-control select2bs4" style="width: 100%;">
-                      <option value="" selected>Select Sinonim</option>
-                      <option  value="">Dengan Saya</option>
-                      <option value="">Dengan Aku</option>
-                      <option value="">Saya</option>
-                      <option value="">Aku</option>
-                      <option value="">Gw</option>
-                      <option value="">Ane</option>
-                    </select>
-                    
+                    <label for="noise">Noise</label>
+                    <input type="text" name="noise" class="form-control" id="exampleInput" placeholder="Enter noise">
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Create</button>
                 </div>
             </div>
             <!-- /.card -->
@@ -599,7 +562,7 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function () {
   $.validator.setDefaults({
     submitHandler: function () {
@@ -644,6 +607,6 @@ $(document).ready(function () {
     }
   });
 });
-</script>
+</script>-->
 </body>
 </html>

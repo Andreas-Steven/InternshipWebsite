@@ -43,7 +43,7 @@
             ]);
 
             $result = json_decode($response->getBody()->getContents(), true);
-            return $result["data"];
+            return $result["data"][0];
         }
 
         public function createKategori($data)

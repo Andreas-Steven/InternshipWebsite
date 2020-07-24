@@ -3,6 +3,8 @@
 
     class KategoriController extends CI_Controller 
     {
+        private $base_url = "http://localhost:8080/InternshipWebsite/";
+
         public function __construct()
         {
             parent::__construct();
@@ -19,12 +21,11 @@
             // echo $res;
         }
 
-        public function getKategoriById()
+        public function getKategoriById() // BUAT EDIT
         {
-            $id = $this->input->post('id');
-            $res = $this->kategoriModel->getKategoriById($id);
-            // $this->load->view('', $res);
-            echo $res;
+            $id = $this->input->get('id');
+            $data['hasil'] = $this->kategoriModel->getKategoriById($id);
+            $this->load->view('edit_kategori', $data);
         }
 
         public function createKategori()
@@ -35,8 +36,7 @@
             );
 
             $res = $this->kategoriModel->createKategori($data);
-            // $this->load->view('', $res);
-            echo $res;
+            redirect($this->base_url);
         }
 
         public function updateKategori()
@@ -48,8 +48,7 @@
             );
 
             $res = $this->kategoriModel->updateKategori($data);
-            // $this->load->view('', $res);
-            echo $res;
+            redirect($this->base_url);
         }
 
         public function deleteKategori()

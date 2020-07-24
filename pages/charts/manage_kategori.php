@@ -30,18 +30,6 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
@@ -531,28 +519,22 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="" method="POST" role="form" id="quickForm">
+              <form action="http://localhost:8080/InternshipWebsite/index.php/KategoriController/createKategori" method="POST" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="input">Input</label>
-                    <input type="text" name="input" class="form-control" id="exampleInput" placeholder="Enter input">
+                    <label for="kategori">Nama Kategori</label>
+                    <input type="text" name="kategori" class="form-control" id="exampleInput" placeholder="Enter kategori">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Sinonim</label>
-                    <br>
-                    <select name="api" id="mySelect" class="form-control select2bs4" style="width: 100%;">
-                      <option value="" selected>Select Sinonim</option>
-                      <option  value="">Pembunuhan</option>
-                      <option value="">Penipuan</option>
-                      <option value="">Pemerkosaan</option>
-                      <option value="">Pencurian</option>
-                    </select>
-                    
+                    <label for="sinonim">Sinonim</label>
+                    <input type="text" name="sinonim" class="form-control" id="exampleInput" placeholder="Enter sinonim">
+                    <small class="form-text"style="color:red"><b>Masukan sinonim dengan tanda (,) tanpa 'spasi'</b></small>
+                   
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-success">Kirim</button>
                 </div>
               </form>
             
@@ -599,51 +581,6 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-  $.validator.setDefaults({
-    submitHandler: function () {
-      alert( "Form successful submitted!" );
-    }
-  });
-  $('#quickForm').validate({
-    rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-      password: {
-        required: true,
-        minlength: 5
-      },
-      terms: {
-        required: true
-      },
-    },
-    messages: {
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a vaild email address"
-      },
-      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },
-      terms: "Please accept our terms"
-    },
-    errorElement: 'span',
-    errorPlacement: function (error, element) {
-      error.addClass('invalid-feedback');
-      element.closest('.form-group').append(error);
-    },
-    highlight: function (element, errorClass, validClass) {
-      $(element).addClass('is-invalid');
-    },
-    unhighlight: function (element, errorClass, validClass) {
-      $(element).removeClass('is-invalid');
-    }
-  });
-});
-</script>
+
 </body>
 </html>

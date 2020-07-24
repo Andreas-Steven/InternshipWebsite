@@ -26,7 +26,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../v_main.php" class="nav-link">Home</a>
+      <a href="<?php echo base_url('#'); ?>" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -218,12 +218,6 @@
                   <p>KategoriAPI</p>
                 </a>
               </li>
-              <!-- <li class="nav-item">
-                <a href="../forms/validation.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li> -->
             </ul>
           </li>
           <li class="nav-item has-treeview">

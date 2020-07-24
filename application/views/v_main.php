@@ -1,7 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -255,7 +251,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/manage_nama.php" class="nav-link">
+                <a href="pages/charts/manage_kategori.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ManageKategori</p>
                 </a>
@@ -580,7 +576,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       </thead>
                       <tbody>
                         <?php 
-                          $base = "http://localhost/InternshipWebsite/"; 
+                          $base = "http://localhost:8080/InternshipWebsite/"; 
                           $no = 1; 
                           foreach($nama as $Row){ 
                         ?>
@@ -589,7 +585,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           <td><?= ucfirst($Row["noise"]) ?></td>
                           <td class="project-actions text-right">
                         
-                          <a class="btn btn-info btn-sm" href="#">
+                          <a class="btn btn-info btn-sm" href="<?= $base . "index.php/NamaController/getNamaById?id=" . $Row["id"] ?>">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Edit
@@ -652,7 +648,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           </td>
                           <td class="project-actions text-right">
                         
-                          <a class="btn btn-info btn-sm" href="#">
+                          <a class="btn btn-info btn-sm" href="<?= $base . "index.php/KategoriController/getKategoriById?id=" . $Row["id"] ?>">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Edit
@@ -775,8 +771,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     // checkCookie();
 
   </script>
-
-
 
 </body>
 </html>
